@@ -1,0 +1,107 @@
+/* index.css */
+/* Reset and Base Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "VT323", monospace; /* Pixel/retro font */
+  font-size: 20px;
+  background-color: #0a0e1a;
+  color: #f8f8f2;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  font-family: "Press Start 2P", monospace;
+  color: #f1fa8c;
+  text-shadow: 0 0 5px #ff79c6;
+}
+
+/* Inputs & Form Controls */
+input,
+select {
+  background: #1a1f2e;
+  color: #f8f8f2;
+  border: 2px solid #44475a;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  font-family: inherit;
+  transition: 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #8be9fd;
+  box-shadow: 0 0 5px #8be9fd;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  font-family: inherit;
+  background: #50fa7b;
+  color: #0a0e1a;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #3de674;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #50fa7b;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0e1a;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #44475a;
+  border-radius: 6px;
+}
+
+/* Container Utility */
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-in;
+}

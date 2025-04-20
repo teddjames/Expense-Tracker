@@ -1,0 +1,83 @@
+/* app.css */
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ff79c6;
+  font-size: 2.5rem;
+  text-shadow: 0 0 5px rgba(255, 121, 198, 0.8);
+}
+
+/* SearchBar */
+.search-bar input {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+/* Expense Form */
+.form-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.form-group input {
+  flex: 1;
+  min-width: 150px;
+}
+
+/* Expense Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1a1f2e;
+  border: 2px solid #44475a;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 0.8rem 1rem;
+  border: 1px solid #44475a;
+  text-align: left;
+  font-family: "Courier New", monospace;
+}
+
+th {
+  background: #282a36;
+  color: #8be9fd;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+td {
+  color: #f8f8f2;
+}
+
+tbody tr:nth-child(odd) {
+  background: #0a0e1a;
+}
+
+tbody tr:nth-child(even) {
+  background: #1a1f2e;
+}
+
+tr:hover {
+  background: #2c3040;
+}
+
+/* Button in Table (e.g. delete) */
+.table-btn {
+  background: #ff5555;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.table-btn:hover {
+  background: #ff6e6e;
+  box-shadow: 0 0 5px #ff5555;
+}
